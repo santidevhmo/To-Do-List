@@ -1,0 +1,191 @@
+
+body {
+    background-color: #E7F6F2;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Title */
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+    color: #2C3333;
+}
+
+/* Subtitle ("Add a new task") */
+h4 {
+    font-weight: 600;
+    color: #395B64;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+/* "Created by: . . .  */
+.credits {
+    font-weight: 600;
+    color: #395B64;
+    padding-bottom: 30px;
+}
+
+#pleaseEnterText {
+    font-weight: 500;
+    color: #C21010;
+    padding-left: 63px;
+    display: none;
+}
+
+/* Link to github */
+a {
+    font-weight: 600;
+    color: #395B64;
+    padding-bottom: 30px;
+}
+
+/* Columns */
+#colOne {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+#addTask {
+    display: flex;
+}
+#colOneTwo {
+    display: inline-block;
+}
+
+#colTwo {
+    padding-top: 60px;
+}
+#taskItem {
+    display: flex;
+    align-items: center;
+}
+
+/* ⬅️ Left Column Items */
+/* ----- Add a new task ----- */
+#outerSquare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 12px;
+    background: #E7F6F2;
+    box-shadow: 0px 3.39419px 10.1826px rgba(165, 201, 202, 0.5); /* For opacity of 50%, we converted the HEX to RGBA */
+    border-radius: 12.7282px; 
+}
+
+#iconSelector {
+    height: 35px;
+    width: 35px;
+    background-color: rgba(165, 201, 202, 0.15);
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    -moz-appearance: none; /* To remove default dropdown arrow */
+    border: none;
+}
+
+#taskInput {
+    padding-left: 10px;
+    background: #E7F6F2;
+    font-weight: 400;
+    color: #395B64;
+    box-shadow: 0px 3.39419px 10.1826px rgba(165, 201, 202, 0.5); /* For opacity of 50%, we converted the HEX to RGBA */
+    border-radius: 12px;
+     /* Only using border and border-color doesn't work */
+    /* border: 2px solid #C21010 !important; */
+    border: none;
+    border-width: 0 1px;
+    height: 50px;
+}
+/* Removed blue highlight border when clicking input */
+#taskInput:focus {
+    outline: none;
+}
+.emptyTaskInput {
+    padding-left: 10px;
+    background: #E7F6F2;
+    font-weight: 400;
+    color: #395B64;
+    box-shadow: 0px 3.39419px 10.1826px rgba(165, 201, 202, 0.5); /* For opacity of 50%, we converted the HEX to RGBA */
+    border-radius: 12px;
+    border: 5px;
+    border-color: #C21010;
+    height: 50px;
+}
+
+#newTaskBtn {
+    font-weight: 200;
+    color: #395B64;
+    border: none;
+    padding: 0px 12px 0px 12px; /* Top Right Bottom Left */
+    background: #E7F6F2;
+    box-shadow: 0px 3.39419px 10.1826px rgba(165, 201, 202, 0.5); /* For opacity of 50%, we converted the HEX to RGBA */
+    border-radius: 8px;
+}
+#newTaskBtn:hover {
+    color: #E7F6F2;
+    background-color: #2C3333;
+    box-shadow: 0px 3.39419px 10.1826px rgba(44, 51, 51, 0.5);
+}
+
+.addTaskElement {
+    margin-left: 10px; /* Spacing between div elements */
+}
+
+/* ➡️ Right Column Items */
+/* ----- Single Task Item ----- */
+#taskItem {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: #395B64;
+    font-size: 18px;
+    padding-top: 10px;
+}
+#outerSquareTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: max-content;
+    border-radius: 12px;
+    background: #E7F6F2;
+    box-shadow: 0px 3.39419px 10.1826px rgba(165, 201, 202, 0.5); /* For opacity of 50%, we converted the HEX to RGBA */
+    border-radius: 12.7282px; 
+}
+#taskIcon {
+    background-color: rgba(165, 201, 202, 0.15);
+    height: 35px;
+    width: 35px;
+    padding-top: 4px; /* To center emoji in square */
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    -moz-appearance: none; /* To remove default dropdown arrow */
+}
+#taskText {
+    margin-left: 13px;
+    margin-right: 10px;
+    font-size: 16px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+#deleteBtn {
+    font-weight: 200;
+    color: #395B64;
+    border: none;
+    margin-left: 10px;
+    padding: 10px 12px 10px 12px; /* Top Right Bottom Left */
+    background: #E7F6F2;
+    box-shadow: 0px 3.39419px 10.1826px rgba(165, 201, 202, 0.5); /* For opacity of 50%, we converted the HEX to RGBA */
+    border-radius: 8px;
+}
+#deleteBtn:hover {
+    color: #E7F6F2;
+    background-color: #2C3333;
+    box-shadow: 0px 3.39419px 10.1826px rgba(44, 51, 51, 0.5);
+}
