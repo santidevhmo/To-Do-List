@@ -7,7 +7,7 @@ Made with HTML, CSS, and JavaScript
 
 ## Demo
 
-![Sample Gif](Demo.gif)
+![Sample Gif](TodoRecording.gif)
 
 Link to CodePen: https://codepen.io/desert-dev/pen/MWVNjQQ
 ## Feedback
