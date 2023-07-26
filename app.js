@@ -73,7 +73,7 @@ function visualNewTask(icon, taskName) {
 
     // Access all cloned task properties (elements inside the cloned div)
     const taskProperties = task.querySelectorAll('.taskProperty');
-    const taskIcon = taskProperties[0]; // Task icon property??
+    const taskIcon = taskProperties[0]; // Task icon property
     const taskLabel = taskProperties[1]; // Text Label Property
 
     // Set the cloned task label and icon to its parameters

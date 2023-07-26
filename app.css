@@ -26,6 +26,15 @@ h4 {
     padding-bottom: 30px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #395B64;
+    text-decoration: underline;
+}
+
 #pleaseEnterText {
     font-weight: 500;
     color: #C21010;
@@ -55,6 +64,15 @@ a {
 #colTwo {
     padding-top: 60px;
 }
+
+@media (max-width: 990px) {
+
+    #colTwo {
+        padding-left: 50px;
+    } 
+
+}
+
 #taskItem {
     display: flex;
     align-items: center;
